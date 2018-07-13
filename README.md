@@ -1,4 +1,4 @@
-# MATLAB implementation of Watson &Yellott's (2012) unified formula for light-adapted pupil size
+# Watson & Yellott's (2012) unified formula for light-adapted pupil size
 
 This MATLAB code implements Watson & Yellott's unified formula for the light adapted pupil size as well as the other pupil size models reviewed in the paper.
 
