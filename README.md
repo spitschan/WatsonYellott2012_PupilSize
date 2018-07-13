@@ -5,7 +5,6 @@ This MATLAB code implements Watson & Yellott's unified formula for the light ada
 Full reference to their paper: Watson AB & Yellott JI (2012) A unified formula for light-adapted pupil size. *J Vis 12*(10):12. [doi: 10.1167/12.10.12](https://doi.org/10.1167/12.10.12).
 
 Developers:
-* Manuel Spitschan, Department of Experimental Psychology, University of Oxford
-* William Wheatley, Department of Experimental Psychology, University of Oxford
+* Written by William Wheatley & Manuel Spitschan, Department of Experimental Psychology, University of Oxford
 
 Any questions? Please email manuel.spitschan@psy.ox.ac.uk.
