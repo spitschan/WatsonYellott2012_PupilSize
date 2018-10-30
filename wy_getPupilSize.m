@@ -31,33 +31,6 @@ switch whichModel
         %% Other models quoted in W&Y (2012)
         % presented in order they are discussed in the paper.
         % D = pupil diameter, the following letter is the author's initals to help
-        % differentiate between formulas
-        % refAge taken from W&Y(2012) paper, based on the mean age from S&D(1995)
-        % sample. fieldSizeDeg calculates the field area (as required from the formula) from
-        % the input of field diameter
-        refAge = 28.58;
-        %% calculate pupil diameter
-        % monocular/binocular effect factored into Stanley and Davies (1995) model.
-        % *Luminance in the formula by 0.1 for one eye and 1 for two eyes
-        if eyeNumber ==1
-            formulaDSD = 7.75-5.75*(((fieldSizeDeg*luminanceCdM2*0.1/846)^0.41)/((fieldSizeDeg*luminanceCdM2*0.1/846)^0.41 +2));
-        else
-            formulaDSD = 7.75-5.75*(((fieldSizeDeg*luminanceCdM2/846)^0.41)/((fieldSizeDeg*luminanceCdM2/846)^0.41 +2));
-        end
-        %this is the formula for the 'age slope' as mentioned in W&Y(2012)
-        formulaS = 0.021323-0.0095623*formulaDSD;
-        %this is the formula for the 'age effect' as mentioned in W&Y(2012), it
-        %includes the 'age slope' as part of the formula
-        formulaA = (ageYrs-refAge)*formulaS;
-        %then calculate the unified formula. This involves the Stanley and Davies
-        %formula with the mono/bino adjustment  added to the 'age effect'
-        formulaU = formulaDSD + formulaA;
-        pupilDiameterMm = formulaU;
-        
-        
-        %% Other models quoted in W&Y (2012)
-        % presented in order they are discussed in the paper.
-        % D = pupil diameter, the following letter is the author's initals to help
         % differentiate between formulas.
         %
         % MoonSpencer, DeGrootGebhard and Crawford appear to underestimate
